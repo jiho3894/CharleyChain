@@ -1,29 +1,11 @@
-type TWo = {
-  [key: string]: string;
-};
+// type interface 차이는?
+// type은 새로운 속성을 추가하기 위해서 다시 같은 이름으로 선어할 수 없지만
+// interface는 항상 선언적 확장이 가능하다
 
-class TDic {
-  private words: TWords;
-  constructor() {
-    this.words = {};
-  }
-
-  add(word: TWord) {
-    if (this.words[word.term] === undefined) {
-      this.words[word.term] = word.def;
-    }
-  }
-  def(term: string) {
-    return this.words[term];
-  }
+interface User {
+  name: string
 }
 
-class TW {
-  constructor(public term: string, public def: string) {}
+const nico: User = {
+  name: "3"
 }
-
-const Tkimch = new Word("kimchi", "한국의 음식");
-
-const Tdic = new Dict();
-
-Tdict.add(kimchi);
