@@ -22,8 +22,6 @@ class TWord {
   constructor(public term: string, public def: string) {}
 }
 
-const Tkimchi = new Word("kimchi", "한국의 음식");
+const Tkimchi = new TWord("kimchi", "한국의 음식");
 
-const Tdict = new Dict();
-
-Tdict.add(kimchi);
+const Tdict = new TDict();
